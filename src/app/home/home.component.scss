@@ -1,0 +1,77 @@
+.chamado {
+  background: #dfe7f7;
+  // opacity: 0.1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box {
+    background: rgb(57,122,225);
+    box-shadow: 0px 4px 8px #1767E526;
+    border-radius: 15px;
+    background: transparent linear-gradient(89deg, #397AE1 0%, #ADDBEF 100%) 0% 0% no-repeat padding-box;
+
+    width: 618px;
+    height: 199px;
+
+    position: relative;
+    top: 60px;
+
+    text-align: center;
+    color: #FFFFFF;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    button {
+      color: #1767E5;
+      padding: 0px 24px;
+      margin-top: 13px;
+    }
+  }
+}
+
+.banner {
+  img {
+    display: block;
+    width: 100%;
+  }
+  .mob {
+    display: none;
+  }
+
+  .desk {
+    display: block;
+  }
+}
+
+
+@media only screen and (max-width: 769px) {
+  .chamado {
+    background:  linear-gradient( #dfe7f7 70%, transparent 50%);
+    margin-bottom: 70px;
+
+    .box {
+      margin: 25px;
+      padding: 20px;
+      height: auto;
+      top: 40px;
+    }
+  }
+
+  .banner {
+    .mob {
+      display: block;
+    }
+
+    .desk {
+      display: none;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .main {
-  background:  linear-gradient( #1767E5 50%, #F6F6F9 50%);
+  background:  linear-gradient( #1767E5 55%, #F6F6F9 50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +30,7 @@
     opacity: 1;
     padding: 30px;
   }
+
   form {
     display: flex;
     flex-direction: column;
@@ -37,7 +38,7 @@
     .mat-form-field {
       max-width: 400px;
       width: 320px;
-    margin: 0 auto;
+      margin: 0 auto;
     }
 
     button {
@@ -52,6 +53,20 @@
       transition: 0.3s ease-in-out;
       &:hover {
         background-color: #0a52c3;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .main {
+    .box {
+      min-width: 300px;
+    }
+    form {
+      .mat-form-field {
+        width: auto;
+        margin: 0 auto;
       }
     }
   }

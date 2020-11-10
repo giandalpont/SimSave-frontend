@@ -1,0 +1,83 @@
+.product {
+  padding: 20px;
+
+  .card {
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    max-width: 398px;
+    text-align: center;
+    padding: 10px 25px 25px 25px;
+    margin-top: 16px;
+
+    .color {
+      width: 40px;
+      height: 5px;
+      border-radius: 0px 0px 5px 5px;
+
+      position: relative;
+      top: -10px;
+      left: 41%;
+    }
+
+    &.urgency {
+      .color {
+        background-color: #F11516;
+      }
+      h2, button {
+        color: #F11516;
+      }
+    }
+
+    &.student {
+      .color {
+        background-color: #1767E5;
+      }
+      h2 {
+        color: #1767E5;
+      }
+    }
+    &.specialist {
+      .color {
+        background-color: #6B41E9;
+      }
+      h2 {
+        color: #6B41E9;
+      }
+    }
+    &.nursing {
+      .color {
+        background-color: #35DB93;
+      }
+      h2, button {
+        color: #35DB93;
+      }
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
+    p {
+      color: #5D5D5D;
+    }
+
+    button {
+      margin: 20px;
+      padding: 1px 31px;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .product {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1640px;
+
+    .card {
+      margin: 10px;
+      max-width: 330px;
+    }
+  }
+}

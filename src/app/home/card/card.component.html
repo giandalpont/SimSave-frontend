@@ -1,0 +1,11 @@
+<section class="product">
+  <div *ngFor="let product of products.products" class="card {{product.title.toLowerCase()}}">
+    <div class="color"></div>
+    <h2>{{product.title}}</h2>
+    <p>{{product.text}}</p>
+    <button mat-raised-button>
+      <div *ngIf="product.title == 'Urgency' || product.title == 'Nursing'">Cadastre-se</div>
+      <div *ngIf="product.title == 'Student' || product.title == 'Specialist'" style="color:#878787">Em Breve</div>
+    </button>
+  </div>
+</section>
